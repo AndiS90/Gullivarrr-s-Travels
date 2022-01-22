@@ -3,6 +3,7 @@ import React from 'react';
 import { Redirect, useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 
+
 import SkillsList from '../components/SkillsList';
 import SkillForm from '../components/SkillForm';
 
@@ -44,12 +45,12 @@ const Profile = () => {
 
   return (
     <div>
+
       <h2 className="card-header">
-        {profileId ? `${profile.name}'s` : 'Your'} friends have endorsed these
-        skills...
+        This is your Dashboard! You can do whatever you want with it!
       </h2>
 
-      {profile.skills?.length > 0 && (
+      {/* {profile.skills?.length > 0 && (
         <SkillsList
           skills={profile.skills}
           isLoggedInUser={!profileId && true}
@@ -58,7 +59,7 @@ const Profile = () => {
 
       <div className="my-4 p-4" style={{ border: '1px dotted #1a1a1a' }}>
         <SkillForm profileId={profile._id} />
-      </div>
+      </div> */}
     </div>
   );
 };
