@@ -6,9 +6,11 @@ import { useQuery } from '@apollo/client';
 import { getNamesPlusNullArray } from '../utils/API';
 import { Autocomplete } from 'react-materialize';
 import 'materialize-css';
+import Card from "../components/Card/card"
 
-import SkillsList from '../components/SkillsList';
-import SkillForm from '../components/SkillForm';
+
+// import SkillsList from '../components/SkillsList';
+// import SkillForm from '../components/SkillForm';
 
 import { QUERY_SINGLE_PROFILE, QUERY_ME } from '../utils/queries';
 
@@ -49,18 +51,75 @@ console.log( optionsObj );
   if (!profile?.name) {
     return (
       <h4>
-        You need to be logged in to see your profile page. Use the navigation
-        links above to sign up or log in!
+        You've been logged out! Please log in to view your profile!
       </h4>
     );
   }
 
   return (
-    <div>
-
+    <div className='villager-container'>
       <h2 className="card-header">
-        This is your Dashboard! You can do whatever you want with it!
+        Your Current villagers
       </h2>
+    
+      <div className="current-villagers">
+          {/* CARD TEMPLATE  */}
+          <div className='card-div'>
+            <div class="card">
+                 <div class="card-content">
+                     <p class="title"> Villager Name </p>
+                      <p class="subtitle"> Currently in your Island </p>
+              </div>
+            </div>
+          </div>
+
+          <div className='card-div'>
+            <div class="card">
+                 <div class="card-content">
+                     <p class="title"> Villager Name </p>
+                      <p class="subtitle"> Currently in your Island </p>
+              </div>
+            </div>
+          </div>
+
+          <div className='card-div'>
+            <div class="card">
+                 <div class="card-content">
+                     <p class="title"> Villager Name </p>
+                      <p class="subtitle"> Currently in your Island </p>
+              </div>
+            </div>
+          </div>
+
+          <div className='card-div'>
+            <div class="card">
+                 <div class="card-content">
+                     <p class="title"> Villager Name </p>
+                      <p class="subtitle"> Currently in your Island </p>
+              </div>
+            </div>
+          </div>
+
+          <div className='card-div'>
+            <div class="card">
+                 <div class="card-content">
+                     <p class="title"> Villager Name </p>
+                      <p class="subtitle"> Currently in your Island </p>
+              </div>
+            </div>
+          </div>
+
+
+    
+      </div>  
+
+
+
+
+
+
+
+
 
       <Autocomplete
   id="Autocomplete-41"
