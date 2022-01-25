@@ -1,7 +1,11 @@
 import React from 'react';
 
+
 import { Redirect, useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
+import { getNamesPlusNullArray } from '../utils/API';
+import { Autocomplete } from 'react-materialize';
+import 'materialize-css';
 import Card from "../components/Card/card"
 
 
@@ -11,9 +15,18 @@ import Card from "../components/Card/card"
 import { QUERY_SINGLE_PROFILE, QUERY_ME } from '../utils/queries';
 
 import Auth from '../utils/auth';
-
 const Profile = () => {
   const { profileId } = useParams();
+
+
+const optionsObj = getNamesPlusNullArray();
+
+console.log( optionsObj );
+
+
+
+
+
 
   // If there is no `profileId` in the URL as a parameter, execute the `QUERY_ME` query instead for the logged in user's information
   const { loading, data } = useQuery(
@@ -105,6 +118,18 @@ const Profile = () => {
 
 
 
+
+
+
+      <Autocomplete
+  id="Autocomplete-41"
+  options={{
+    data: 
+    optionsObj
+  }}
+  placeholder="Insert here"
+  title="Input Label"
+/>
 
 
 
