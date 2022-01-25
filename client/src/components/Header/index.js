@@ -1,9 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import "../../css/stylesheet.css"
+// import Title from "../Title/title"
+import logo from "../../images/logo-noobs.png"
+// import LoginTitle from "../titleLogin/titleLogin"
 
 import Auth from '../../utils/auth';
-// import NavTabs from '../NavBar';
+// import LoginBtn from '../loginBtn';
+
+
 
 const Header = () => {
   const logout = (event) => {
@@ -13,36 +18,64 @@ const Header = () => {
   return (
 
     <header className="header-div"> 
-         <div className="container flex-column justify-space-between-lg justify-center align-center text-center">
-        
-        <Link className="text-dark" to="/">
-          <h1 className="m-0" style={{ fontSize: '3rem' }}>
-            Gullivarrs Travels
-          </h1>
-        </Link>
-        <p className="m-0" style={{ fontSize: '1.75rem', fontWeight: '700' }}>
-          Trade, Travel, and Make Friends!
-        </p>
-        {/* <NavTabs/> */}
+    {/* <LoginTitle/> */}
+         <div className="container flex-column justify-space-between-lg text-center">
 
-
+      
         <div>
           {Auth.loggedIn() ? (
             <>
 
             {/* =============== IF LOGGED IN ================= */}
-              <Link className="btn btn-lg btn-primary m-2" to="/me">
-               <h2 className='title is-4 has-text-white'>  My Villagers    </h2> 
+                      {/* NAVBAR WILL BE DISPLAYED  */}
+{/* 
+<Title/> */}
+
+<div className='logo-div'>
+    <img src = {logo} alt = "" className = "icon"></img>
+</div>
+
+ <div className="navbar">
+   
+    <div className="nav">
+                
+        <ul>
+          {/* LOGOUT LINK  */}
+          <li> <Link className="" onClick={logout}>
+               <h2 className='title is-4 has-text-white'> Logout </h2> 
+                </Link>           
+         </li>
+
+          {/* LINK TO DISPLAY DASHBOARD */}
+          <li> <Link className="" to="/me">
+            <h2 className='title is-4 has-text-white'> Dashboard </h2> 
               </Link>
-              <button className="btn btn-lg btn-light m-2" onClick={logout}>
-               <h2 className='title is-4 has-text-black'> Logout </h2> 
-              </button>
+          </li>
+
+            {/* LINK TO MESSAGES (NOT MADE YET) */}
+          <li> <a href="#messager"> 
+            <h2 className='title is-4 has-text-white'> My Messages </h2> </a>
+          </li>
+
+           </ul>
+        </div>
+   </div>
+
             </>
           ) : (
             <>
 
 
              {/* =============== IF LOGGED OUT ================= */}
+             
+
+          <div className='logo-div-two'>
+              <img src = {logo} alt = "" className = "icon-two"></img>
+          </div>
+            {/* <LoginBtn/> */}
+       
+       
+
               <Link className="btn btn-lg btn-primary m-2" to="/login">
                 <h2 className='title is-3 has-text-white'>  Login </h2>
               </Link>
