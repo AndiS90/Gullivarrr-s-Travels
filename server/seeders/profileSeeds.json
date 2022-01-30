@@ -1,78 +1,59 @@
 [
   {
-    "name": "Brian Kernighan",
-    "email": "bkernighan@techfriends.dev",
+    "name": "Andrea Strickland",
+    "email": "boredomsux09@gmail.com",
     "password": "password01",
-    "skills": ["AWK", "AMPL", "Unix"]
+    "villagers": ["Raymond", "Sheldon", "Olivia", "Meringue"]
   },
   {
-    "name": "Max Kanat-Alexander",
-    "email": "mkanatalexander@techfriends.dev",
-    "password": "password02",
-    "skills": ["Java", "Perl", "Apache", "Python"]
+    "name": "Jason Cisneros",
+    "email": "winterlorddarkness@ymail.com",
+    "password": "chipsanddip1",
+    "villagers": ["Ankha", "Frett", "Gonzo", "Gaston"]
   },
   {
-    "name": "Amiko",
-    "email": "amiko@techfriends.dev",
-    "password": "password03",
-    "skills": ["NodeJS", "MySQL", "MongoDB", "React", "CSS-in-JS"]
+    "name": "Paulina Gamboa",
+    "email": "pcosmosis@aol.com",
+    "password": "oldhorizons1",
+    "villagers": ["Vesta", "Del", "Monty", "Wolfgang"]
   },
   {
-    "name": "Kent Beck",
-    "email": "kbeck@techfriends.dev",
-    "password": "password04",
-    "skills": [
-      "Test-Driven Development",
-      "Extreme Programming",
-      "Software Design Patterns",
-      "JUnit"
+    "name": "Ray Torres",
+    "email": "rockthemsocks89@yahoo.com",
+    "password": "walkerranger2",
+    "villagers": [
+      "Hamlet",
+      "Hamphrey",
+      "Hopkins",
+      "Hornsby"
     ]
   },
   {
-    "name": "Edward V. Berard",
-    "email": "evberard@techfriends.dev",
-    "password": "password05",
-    "skills": ["Object-Oriented Design"]
+    "name": "Griselda Mendieta",
+    "email": "grizzlyfan@fun.com",
+    "password": "gobeargo1",
+    "villagers": ["Kevin"]
   },
   {
-    "name": "Alan Kay",
-    "email": "akay@techfriends.dev",
+    "name": "Patrick Luna",
+    "email": "pittypat@taco.net",
     "password": "password06",
-    "skills": [
-      "Graphical User Interface (GUI) Design",
-      "Jazz Guitar",
-      "Education"
+    "villagers": [
+      "Limberg",
+      "Mario",
+      "Olaf"
     ]
   },
   {
-    "name": "C.A.R. Hoare",
-    "email": "choare@techfriends.dev",
+    "name": "Josh Hogan",
+    "email": "hoganhero@hotmail.com",
     "password": "password07",
-    "skills": ["Algorithms", "Quicksort", "Hoare Logic"]
+    "villagers": ["Raymond", "Sly", "Dizzy"]
   },
   {
-    "name": "David Thomas",
-    "email": "dthomas@techfriends.dev",
+    "name": "Sergio Diaz",
+    "email": "diazsergio@ymail.com",
     "password": "password08",
-    "skills": ["Author", "Code Kata", "Ruby", "Pragmatic Programming"]
-  },
-  {
-    "name": "Donald Knuth",
-    "email": "dknuth@techfriends.dev",
-    "password": "password09",
-    "skills": ["TeX Computer Typesetting", "Algorithms", "Author"]
-  },
-  {
-    "name": "Lernantino",
-    "email": "lernantino@techfriends.dev",
-    "password": "password10",
-    "skills": [
-      "JavaScript",
-      "CSS",
-      "HTML",
-      "Design Systems",
-      "Typescript",
-      "PWAs"
-    ]
+    "villagers": ["Fang", "Gwen", "Hopper", "Ike"]
   }
 ]
