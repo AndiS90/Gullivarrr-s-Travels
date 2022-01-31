@@ -8,8 +8,8 @@ const resolvers = {
     //   return Profile.find();
     // },
 
-    profile: async (parent, { profileId }) => {
-      return Profile.findOne({ _id: profileId }).populate('villagers');
+    profile: async (parent, { username }) => {
+      return Profile.findOne({ username }).populate('villagers');
     },
 
     villagers: async (parent, { username }) => {
@@ -82,9 +82,9 @@ const resolvers = {
         console.log(context.user);
 
         const villager = await Villager.create({
-            villagerUser: context.user.username,
-            villagerInput: { ...villagerInput  }
-        });
+          villagerUser: context.user.username,
+            ...villagerInput 
+      });
   console.log(villager);
         await Profile.findOneAndUpdate(
           { _id: context.user._id },
@@ -160,7 +160,7 @@ addMovingVil: async (parent, { movingVilInput }, context) => {
   if (context.user) {
     const movingVil = await MovingVil.create({
         villagerUser: context.user.username,
-        movingVilInput: movingVilInput
+        ...movingVilInput
     });
 
     // await Profile.findOneAndUpdate(
