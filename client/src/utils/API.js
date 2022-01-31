@@ -2,7 +2,7 @@ export async function searchAllVillagers() {
 
     const villagersArray = [];
 
-    await fetch(`http://acnhapi.com/v1a/villagers/`).then((response) => response.json()).then((data) => {
+    await fetch(`https://acnhapi.com/v1a/villagers/`).then((response) => response.json()).then((data) => {
 
             for (let i = 0; i < data.length; i++) {
 
@@ -42,7 +42,7 @@ export async function getIdByName(nameStr) {
 
 const getIconById = (id) => {
 
-    return fetch(`http://acnhapi.com/v1/icons/villagers/${id}`);
+    return fetch(`https://acnhapi.com/v1/icons/villagers/${id}`);
 
 };
 
@@ -54,7 +54,7 @@ export async function getNamesPlusNullArray(){
     const namesPlusNull =[];
 
 
-const resp = await  fetch(`http://acnhapi.com/v1a/villagers/`)
+const resp = await  fetch(`https://acnhapi.com/v1a/villagers/`)
 .then((response) => response.json()).then((data) => {
     
         for (let i=0; i < data.length; i++) {
@@ -82,7 +82,7 @@ return resp;
 
 export async function getVillagerbyId(apiId){
 
-    const resp = await  fetch(`http://acnhapi.com/v1a/villagers/${apiId}`)
+    const resp = await  fetch(`https://acnhapi.com/v1a/villagers/${apiId}`)
 .then((response) => response.json())
 
     return resp;
